@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        th,td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="title" href="#">심리상담카페</a>
+            </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="test1.html">심리진단</a></li>
+                    <li class="active"><a href="test2.html">성향 검사</a></li>
+                    <li><a href="#sick">정신질환</a></li>
+                    <li><a href="test4.html">상담정보</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <br><br><br>
+    <div class="container">
+
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#survey1" aria-controls="survey1" role="tab" data-toggle="tab">우울증 검사</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">정서안정성 검사</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">스트레스 진단</a></li>
+            </ul>
+                  
+            <div class="tab-content">
+                <br>
+                <div role="tabpanel" class="tab-pane active" id="survey1">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>낭영.</td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 앞날에 희망이 없다고 느껴진다.</td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                        </tr>
+                        <tr>
+                            <td>내 자신이 무가치한 실패자라고 생각된다.</td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 다른 사람에 비해 열등하고 뭔가 잘못되어 있다고 느껴진다.</td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 매사에 내 자신을 비판하고 자책한다.</td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일을 판단하고 결정하기가 어렵다.</td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 쉽게 화가 나고 짜증이 난다.</td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                        </tr>
+                        <tr>
+                            <td>진로, 취미, 가족, 친구에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일에 내 자신을 억지로 내몰지 않으면 일을 하기가 힘들다.</td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 외모는 추하다고 생각한다.</td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                        </tr>
+                        <tr>
+                            <td>식욕이 없다. 또는 지나치게 많이 먹는다.</td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                        </tr>
+                        <tr>
+                            <td>불면으로 고생하며 잠을 자도 개운하지 않다. 또는 지나치게 피곤하여 너무 많이 잔다.</td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                        </tr>
+                        <tr>
+                            <td>성(SEX)에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 건강에 대한 걱정을 많이 한다.</td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                        </tr>
+                        <tr>
+                            <td>내 인생은 살 가치가 없으며 죽는 게 낫다는 생각을 한다.</td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                        </tr>
+                    </table>
+
+                    <h3>총점 : 10</h3>
+                    <hr>
+                    <div class="col-sm-6">
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="myChart" width="100" height="100"></canvas>
+                    </div>
+
+                </div>
+                <div role="tabpane1" class="tab-pane profile" id="survey1">
+                <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>나는 쉽게 감정이 잘 상한다.</td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                            <td><input type="radio" name="question1"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 앞날에 희망이 없다고 느껴진다.</td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                            <td><input type="radio" name="question2"></td>
+                        </tr>
+                        <tr>
+                            <td>내 자신이 무가치한 실패자라고 생각된다.</td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                            <td><input type="radio" name="question3"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 다른 사람에 비해 열등하고 뭔가 잘못되어 있다고 느껴진다.</td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                            <td><input type="radio" name="question4"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 매사에 내 자신을 비판하고 자책한다.</td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                            <td><input type="radio" name="question5"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일을 판단하고 결정하기가 어렵다.</td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                            <td><input type="radio" name="question6"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 쉽게 화가 나고 짜증이 난다.</td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                            <td><input type="radio" name="question7"></td>
+                        </tr>
+                        <tr>
+                            <td>진로, 취미, 가족, 친구에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                            <td><input type="radio" name="question8"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일에 내 자신을 억지로 내몰지 않으면 일을 하기가 힘들다.</td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                            <td><input type="radio" name="question9"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 외모는 추하다고 생각한다.</td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                            <td><input type="radio" name="question10"></td>
+                        </tr>
+                        <tr>
+                            <td>식욕이 없다. 또는 지나치게 많이 먹는다.</td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                            <td><input type="radio" name="question11"></td>
+                        </tr>
+                        <tr>
+                            <td>불면으로 고생하며 잠을 자도 개운하지 않다. 또는 지나치게 피곤하여 너무 많이 잔다.</td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                            <td><input type="radio" name="question12"></td>
+                        </tr>
+                        <tr>
+                            <td>성(SEX)에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                            <td><input type="radio" name="question13"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 건강에 대한 걱정을 많이 한다.</td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                            <td><input type="radio" name="question14"></td>
+                        </tr><tr>
+                            <td>내 인생은 살 가치가 없으며 죽는 게 낫다는 생각을 한다.</td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                            <td><input type="radio" name="question15"></td>
+                        </tr>
+                    </table>
+
+                    <h3>총점 : 10</h3>
+                    <hr>
+                    <div class="col-sm-6">
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                        <p>10점 이하 : ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">메시지</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script>
+        $(function () {
+            $('#myTab a:last').tab('show')
+        })
+
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    data: [10, 9, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+        });
+    </script>
+</body>
+</html>
